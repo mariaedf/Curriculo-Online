@@ -1,54 +1,154 @@
-/*confiigurações da barra de navegação*/
+/*variáveis css*/
+@import url('./vars.css');
 
-nav{/*barra de navegação*/
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    line-height: 4rem;
-    position: fixed;
-    width: 100%;
+/*configurações da barra de navegação*/
+
+nav {/*barra de navegação*/
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+  padding: var(--padding-10);
+  position: fixed;
+  width: 100%;
 }
 
-nav ul{/*lista de links*/
-    list-style: none;
+.profile-photo{/*seção de perfil*/
     display: flex;
-    gap: 20px;
-    background-color: rgb(243, 243, 243);
-    margin: 10px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-photo img{/*foto de perfil*/
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-photo b{/*nome*/
+    color: var(--text-color);
+}
+
+.profile-photo span p{/*email*/
+    color: gray;
+}
+
+nav ul {/*listadelinks*/
+  list-style: none;
+  display: flex;
+  height: 50px;
+  gap: 20px;
+  background-color: var(--gray-color);
+  margin: 10px;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
 }
 
 nav ul li {/*lista de links*/
-    cursor: pointer;
-    padding: 0 20px 0 20px;
-    text-align: center;
-    width: 150px;
+  cursor: pointer;
+  padding: var(--padding-20);
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav ul li a{/*lista de links "a"*/
-    text-decoration: none;
-     color: #000;
+nav ul li .web-link {/*lista de links "a"*/
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav ul li .mobile-link {/*lista de links "a"*/
+  color: var(--text-color);
 }
 
 nav ul .active,
-nav ul .active a{/*link ativo*/
-    background-color: #000;
-    color: #fff;
-    padding: 0 10px 0 10px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+nav ul .active .web-link,
+nav ul .active .mobile-link {/*linkativo*/
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  padding: var(--padding-10);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
 }
 
-@media (max-width: 500px){/*media querie para mobile*/
-    nav ul{/*lista de links*/
-    flex-direction: column;
-    text-align: center;
+.mobile-link {/*link para mobile*/
+  display: none;
 }
+
+.mobile-link svg{/*link para mobile*/
+  width: 50px;
+  height: 50px;
 }
+
+.mode{/*botão de modo claro/escuro*/
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mode:hover{/*hover botão de modo claro/escuro*/
+    background-color: rgba(177, 177, 177, 0.425);
+}
+
+/*----------------------mobile------------------------*/
+
+@media (max-width: 500px) {/*media querie para mobile*/
+  nav {/*barra de navegação*/
+  bottom: 0;
+}
+  nav ul {/*listadelinks*/
+  gap: 10px;
+  background-color: transparent;
+  margin: 10px;
+  border-radius:0;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+}
+
+nav ul li {/*lista de links*/
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+nav ul .active,
+nav ul .active .mobile-link {/*link ativo*/
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
+}
+  .mobile-link {/*link para mobile*/
+    display: flex;
+  }
+
+  .profile-photo span,
+  .web-link {/*link para desktop*/
+    display: none;
+  }
+}
+
+
