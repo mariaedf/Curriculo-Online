@@ -13,6 +13,7 @@ function setDarkmode(){
         root.style.setProperty('--bg-color', '#121212');
         root.style.setProperty('--text-color', '#fff');
         root.style.setProperty('--gray-color', '#383838ff');
+        root.style.setProperty('--p-text-color', '#9c9c9cff');
         localStorage.setItem('mode', 'dark');
 }
 
@@ -27,6 +28,7 @@ function setLightMode(){
         root.style.setProperty('--bg-color', '#fff');
         root.style.setProperty('--text-color', '#000');
         root.style.setProperty('--gray-color', '#f3f3f3');
+        root.style.setProperty('--p-text-color', '#161616');
         localStorage.setItem('mode', 'light');
 }
 

@@ -1,3 +1,5 @@
+/*configurações das seções do site*/
+
 section{/*seções*/
     height: calc(100vh - 76px);
     padding: 76px 20px 20px 20px;

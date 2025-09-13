@@ -1,3 +1,5 @@
+/*variáveis globais*/
+
 :root{
     /*cores*/
     --white-color: #fff;
@@ -5,6 +7,7 @@
     --gray-color: #f3f3f3;
     --bg-color: #fff;
     --text-color: #000;
+    --p-text-color: #161616;
     --purple-color: #866583;
 
     /*bordas*/

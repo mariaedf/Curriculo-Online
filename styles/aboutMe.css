@@ -1,0 +1,80 @@
+/*variáveis css*/
+@import url("./vars.css");
+
+/*configurações da seção "sobre mim"*/
+
+#about-me {/*seção sobre mim*/
+  display: flex;
+  padding-top: 100px;
+}
+
+.about-me-text {/*seção sobre mim texto geral*/
+  width: 50%;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.about-me-text h1 {/*seção sobre mim h1*/
+  font-size: 25px;
+  padding-bottom: 1rem;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #e2265e, #1f6be6, #df006f, #c500b1);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 20s ease infinite;
+  -webkit-animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {/*animação do gardiente da seção sobre mim h1*/
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-me-text p {/*seção sobre mim p*/
+  font-size: 16px;
+  color: var(--p-text-color);
+  font-family: Verdana, Geneva, sans-serif;
+
+}
+
+.external-link {/*link para página externa*/
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.external-link::after {/*ícone do link para página externa*/
+  content: "↗";
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.technologies {/*seção de tecnologias*/
+  width: 50%;
+}
+
+/*----------------------mobile------------------------*/
+
+@media (max-width: 500px) {/*media querie para mobile*/
+  #about-me {/*seção sobre mim*/
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-text {/*seção sobre mim texto geral*/
+    width: 100%;
+  }
+
+  .technologies {/*seção de tecnologias*/
+    width: 100%;
+  }
+}

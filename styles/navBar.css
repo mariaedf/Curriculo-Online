@@ -33,7 +33,7 @@ nav {/*barra de navegação*/
 }
 
 .profile-photo span p{/*email*/
-    color: gray;
+    color: var(--p-text-color);
 }
 
 nav ul {/*listadelinks*/
