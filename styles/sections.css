@@ -1,13 +1,12 @@
 /*configurações das seções do site*/
 
 section{/*seções*/
-    height: calc(100vh - 76px);
+    height: auto;
     padding: 76px 20px 20px 20px;
 }
 
-@media (max-width: 500px) {/*media querie para mobile*/
+@media (max-width: 1000px) {/*media querie para mobile*/
     section{/*seções*/
-        height: 100vh;
         padding: 20px 20px 20px 20px;
     }
 }

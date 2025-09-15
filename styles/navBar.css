@@ -108,11 +108,11 @@ nav ul .active .mobile-link {/*linkativo*/
 
 /*----------------------mobile------------------------*/
 
-@media (max-width: 500px) {/*media querie para mobile*/
+@media (max-width: 1000px) {/*media querie para mobile*/
   nav {/*barra de navegação*/
   bottom: 0;
 }
-  nav ul {/*listadelinks*/
+  nav ul {/*lista de links*/
   gap: 10px;
   background-color: transparent;
   margin: 10px;

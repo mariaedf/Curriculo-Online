@@ -3,32 +3,46 @@
 
 /*configurações da seção "sobre mim"*/
 
-#about-me {/*seção sobre mim*/
+#about-me {
+  /*seção sobre mim*/
   display: flex;
   padding-top: 100px;
 }
 
-.about-me-text {/*seção sobre mim texto geral*/
+.about-me-text {
+  /*seção sobre mim texto geral*/
   width: 50%;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-align: left;
 }
 
-.about-me-text h1 {/*seção sobre mim h1*/
+.about-me-text h1,
+.about-me-text h2 {
+  /*seção sobre mim h1*/
   font-size: 25px;
   padding-bottom: 1rem;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold;
-  background: linear-gradient(90deg, #e2265e, #1f6be6, #df006f, #c500b1);
-  background-size: 300% 300%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientMove 20s ease infinite;
-  -webkit-animation: gradientMove 20s ease infinite;
+  color: var(--purple-color);
 }
 
-@keyframes gradientMove {/*animação do gardiente da seção sobre mim h1*/
+.about-me-text h2 {
+  /*seção sobre mim h2*/
+  padding-top: 1rem;
+}
+
+.about-me-text h2 span {
+  /*seção sobre mim h2 ícone*/
+  font-size: 25px;
+}
+
+.mobile-hand-icon {
+  /*seção sobre mim h2 ícone para mobile*/
+  display: none;
+}
+
+@keyframes gradientMove {
+  /*animação do gardiente da seção sobre mim h1*/
   0% {
     background-position: 0% 50%;
   }
@@ -40,41 +54,128 @@
   }
 }
 
-.about-me-text p {/*seção sobre mim p*/
+.about-me-text p {
+  /*seção sobre mim p*/
   font-size: 16px;
   color: var(--p-text-color);
   font-family: Verdana, Geneva, sans-serif;
-
 }
 
-.external-link {/*link para página externa*/
+.external-link {
+  /*link para página externa*/
   text-decoration: none;
   color: inherit;
   position: relative;
 }
 
-.external-link::after {/*ícone do link para página externa*/
+.external-link::after {
+  /*ícone do link para página externa*/
   content: "↗";
   font-size: 13px;
   margin-left: 5px;
 }
 
-.technologies {/*seção de tecnologias*/
+.technologies {
+  /*seção de tecnologias*/
   width: 50%;
+}
+
+.slide-image {
+  /*slide de tecnologias*/
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid var(--gray-color);
+  box-shadow: rgba(134, 101, 131, 0.4) 5px 5px,
+    rgba(134, 101, 131, 0.3) 10px 10px, rgba(134, 101, 131, 0.2) 15px 15px,
+    rgba(134, 101, 131, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  animation: slide 30s infinite;
+  -webkit-animation: slide 30s infinite;
+}
+
+@keyframes slide {
+  /*mudando as imagens do slide*/
+  0%,
+  9% {
+    background-image: url("../images/figma-icon.svg");
+  }
+  10%,
+  19% {
+    background-image: url("../images/getbootstrap-icon.svg");
+  }
+  20%,
+  29% {
+    background-image: url("../images/javascript-icon.svg");
+  }
+  30%,
+  39% {
+    background-image: url("../images/jestjsio-icon.svg");
+  }
+  40%,
+  49% {
+    background-image: url("../images/reactjs-icon.svg");
+  }
+  50%,
+  59% {
+    background-image: url("../images/sass-lang-icon.svg");
+  }
+  60%,
+  69% {
+    background-image: url("../images/tailwindcss-icon.svg");
+  }
+  70%,
+  79% {
+    background-image: url("../images/typescriptlang-icon.svg");
+  }
+  80%,
+  89% {
+    background-image: url("../images/w3_css-icon~old.svg");
+  }
+  90%,
+  100% {
+    background-image: url("../images/w3_html5-icon.svg");
+  }
+}
+
+.about-me-divider {
+  /*linha separativa de seções*/
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 100px 0;
+}
+
+.about-me-divider svg {
+  /*svg da linha separativa de seções*/
+  width: 90%;
 }
 
 /*----------------------mobile------------------------*/
 
-@media (max-width: 500px) {/*media querie para mobile*/
-  #about-me {/*seção sobre mim*/
+@media (max-width: 1000px) {
+  /*media querie para mobile*/
+  #about-me {
+    /*seção sobre mim*/
     display: flex;
     flex-direction: column;
   }
-  .about-me-text {/*seção sobre mim texto geral*/
+  .about-me-text {
+    /*seção sobre mim texto geral*/
     width: 100%;
   }
-
-  .technologies {/*seção de tecnologias*/
+  .mobile-hand-icon {
+    /*seção sobre mim h2 ícone para mobile*/
+    display: inline-block;
+  }
+  .hand-icon {
+    /*seção sobre mim h2 ícone para desktop*/
+    display: none;
+  }
+  .technologies {
+    /*seção de tecnologias*/
     width: 100%;
   }
 }
