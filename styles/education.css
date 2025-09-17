@@ -1,0 +1,100 @@
+/*variáveis css*/
+@import url("./vars.css");
+
+/*configurações da seção "formação"*/
+
+#education {
+  /*seção formação*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.education-cards {
+  /*cartões de formações*/
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  /*cartão de formação*/
+  width: 500px;
+  height: 500px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(134, 101, 131, 0.4) 5px 5px,
+    rgba(134, 101, 131, 0.3) 10px 10px, rgba(134, 101, 131, 0.2) 15px 15px,
+    rgba(134, 101, 131, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  /*hover do cartão de formação*/
+  transform: scale(1.05);
+}
+
+.education-card img {
+  /*imagem da instituição de formação*/
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--white-color);
+  border-bottom: 2px solid var(--gray-color);
+}
+
+.education-card div {
+  /*descrição da formção*/
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+  padding: 10px;
+}
+
+.education-card div p {
+  /*nome da instituição*/
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: var(--purple-color);
+}
+
+.education-card div span {
+  /*descrição da formção e data*/
+  /*seção sobre mim h1*/
+  font-size: 16px;
+  color: var(--p-text-color);
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*----------------------mobile------------------------*/
+
+@media (max-width: 1000px) {
+  /*media querie para mobile*/
+  .education-cards {
+    /*cartões de formações*/
+    flex-direction: column;
+  }
+  .education-card {
+    /*cartão de formação*/
+    width: 100%;
+  }
+}

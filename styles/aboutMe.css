@@ -6,7 +6,7 @@
 #about-me {
   /*seção sobre mim*/
   display: flex;
-  padding-top: 100px;
+  padding-top: 300px;
 }
 
 .about-me-text {
@@ -120,7 +120,7 @@
   /*linha separativa de seções*/
   display: flex;
   justify-content: center;
-  margin: 100px 0 100px 0;
+  margin: 100px 0 0 0;
 }
 
 .about-me-divider svg {
@@ -136,6 +136,7 @@
     /*seção sobre mim*/
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
   }
   .about-me-text {
     /*seção sobre mim texto geral*/
