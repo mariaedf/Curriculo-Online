@@ -78,67 +78,42 @@
 .technologies {
   /*seção de tecnologias*/
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
-.slide-image {
-  /*slide de tecnologias*/
-  width: 100%;
-  height: 500px;
-  border-radius: 10px;
+.technologies .cards{/*cards de tecnologia*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+} 
+
+.technologies .cards .card{/*card de tecnologia*/
   background-color: var(--bg-color);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
   border: 2px solid var(--gray-color);
-  box-shadow: rgba(134, 101, 131, 0.4) 5px 5px,
-    rgba(134, 101, 131, 0.3) 10px 10px, rgba(134, 101, 131, 0.2) 15px 15px,
-    rgba(134, 101, 131, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-  animation: slide 30s infinite;
-  -webkit-animation: slide 30s infinite;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(134, 101, 131, 0.4) 1px 1px,    rgba(134, 101, 131, 0.3) 2px 2px, rgba(134, 101, 131, 0.2) 3px 3px,    rgba(134, 101, 131, 0.1) 4px 4px, rgba(240, 46, 170, 0.05) 5px 5px;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
-@keyframes slide {
-  /*mudando as imagens do slide*/
-  0%,
-  9% {
-    background-image: url("../images/figma-icon.svg");
-  }
-  10%,
-  19% {
-    background-image: url("../images/getbootstrap-icon.svg");
-  }
-  20%,
-  29% {
-    background-image: url("../images/javascript-icon.svg");
-  }
-  30%,
-  39% {
-    background-image: url("../images/jestjsio-icon.svg");
-  }
-  40%,
-  49% {
-    background-image: url("../images/reactjs-icon.svg");
-  }
-  50%,
-  59% {
-    background-image: url("../images/sass-lang-icon.svg");
-  }
-  60%,
-  69% {
-    background-image: url("../images/tailwindcss-icon.svg");
-  }
-  70%,
-  79% {
-    background-image: url("../images/typescriptlang-icon.svg");
-  }
-  80%,
-  89% {
-    background-image: url("../images/w3_css-icon~old.svg");
-  }
-  90%,
-  100% {
-    background-image: url("../images/w3_html5-icon.svg");
-  }
+.technologies .cards .card:hover{/*hover card de tecnologia*/
+  transform: scale(1.05);
 }
 
 .about-me-divider {
