@@ -16,8 +16,7 @@
   text-align: left;
 }
 
-.about-me-text h1,
-.about-me-text h2 {
+.about-me-text h1 {
   /*seção sobre mim h1*/
   font-size: 25px;
   padding-bottom: 1rem;
@@ -26,18 +25,8 @@
   color: var(--purple-color);
 }
 
-.about-me-text h2 {
-  /*seção sobre mim h2*/
-  padding-top: 1rem;
-}
-
-.about-me-text h2 span {
-  /*seção sobre mim h2 ícone*/
-  font-size: 25px;
-}
-
 .mobile-hand-icon {
-  /*seção sobre mim h2 ícone para mobile*/
+  /*seção sobre mim ícone para mobile*/
   display: none;
 }
 
@@ -141,13 +130,14 @@
   .about-me-text {
     /*seção sobre mim texto geral*/
     width: 100%;
+    padding-bottom: 50px;
   }
   .mobile-hand-icon {
-    /*seção sobre mim h2 ícone para mobile*/
+    /*seção sobre mim ícone para mobile*/
     display: inline-block;
   }
   .hand-icon {
-    /*seção sobre mim h2 ícone para desktop*/
+    /*seção sobre mim ícone para desktop*/
     display: none;
   }
   .technologies {

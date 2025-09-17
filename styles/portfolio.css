@@ -1,0 +1,63 @@
+/*variáveis css*/
+@import url("./vars.css");
+
+/*configurações da seção "portfólio"*/
+
+#portfolio {/*seção portfólio*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.portfolio-links {/*links do portfólio*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#portfolio img,
+#portfolio .LI-profile-badge {/*cartão github e linkedin*/
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(134, 101, 131, 0.4) 5px 5px,
+    rgba(134, 101, 131, 0.3) 10px 10px, rgba(134, 101, 131, 0.2) 15px 15px,
+    rgba(134, 101, 131, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  padding: 0 !important;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+#portfolio img:hover,
+#portfolio .LI-profile-badge:hover {/*hover cartão github e linkedin*/
+  transform: scale(1.05);
+}
+
+#portfolio .LI-profile-badge {/*link linkedin*/
+  width: 250px !important;
+}
+
+#portfolio .LI-profile-badge iframe {/*iframe linkedin*/
+  height: 298px !important;
+}
+
+/*----------------------mobile------------------------*/
+
+@media (max-width: 1000px) {
+  /*media querie para mobile*/
+  .portfolio-links {
+    flex-direction: column;
+  }
+
+  #portfolio img {/*cartão github*/
+    width: 100%;
+  }
+}

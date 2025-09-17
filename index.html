@@ -24,6 +24,9 @@
     <!--seção formação-->
     <link rel="stylesheet" href="../styles/education.css" />
 
+    <!--seção portfolio-->
+    <link rel="stylesheet" href="../styles/portfolio.css" />
+
     <title>Currículo Online</title>
   </head>
   <body>
@@ -204,13 +207,9 @@
               estruturadas</b
             >
             e estou sempre em busca de aprimorar minhas habilidades e aprender
-            novas ferramentas que possam agregar valor aos projetos.
-          </p>
-
-          <h2>
-            Tecnologias usadas <span class="hand-icon">👉</span>
+            novas ferramentas que possam agregar valor aos projetos. <b>Tecnologias usadas</b> <span class="hand-icon">👉</span>
             <span class="mobile-hand-icon">👇</span>
-          </h2>
+          </p>
         </section>
 
         <!--seção cards de tecnologias-->
@@ -310,7 +309,7 @@
 
       <!--seção formação-->
       <section id="education" aria-label="Seção Formação">
-        <!--ícone de fornmção-->
+        <!--ícone de formação-->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="150"
@@ -356,7 +355,7 @@
 
             <div>
               <p>Universidade de São Paulo</p>
-              <span>UX / UI: Fundamentos da Interface do Usuário</span>
+              <span>Curso, UX / UI: Fundamentos da Interface do Usuário</span>
               <span>fev de 2023 - mar de 2023</span>
             </div>
           </section>
@@ -381,7 +380,62 @@
       </div>
 
       <!--seção portifólio-->
-      <section id="portfolio" aria-label="Seção Portifólio">teste 3</section>
+      <section id="portfolio" aria-label="Seção Portifólio">
+        <!--ícone de portfólio-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          height="150"
+          fill="currentColor"
+          class="bi bi-palette"
+          viewBox="0 0 16 16"
+          style="color: #866583"
+        >
+          <path
+            d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+          />
+          <path
+            d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"
+          />
+        </svg>
+
+        <!--cartões-->
+        <section class="portfolio-links">
+          <!--cartão github-->
+          <a
+            href="https://github.com/mariaedf"
+            title="Ver Perfil"
+            target="_blank"
+          >
+          <div id="github">
+            <!--os dados vêm do javascript-->
+          </div>
+          </a>
+
+          <!--cartão linkedin-->
+          <div id="linkedin">
+            <!--os dados vêm do javascript-->
+          </div>
+        </section>
+
+      </section>
+
+      <!--linha separativa de seções-->
+      <div class="about-me-divider" aria-label="Linha Separativa">
+        <!--svg feito pelo Figma-->
+        <svg
+          viewBox="0 0 1205 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.5 16L264.38 3L472.044 16L740.701 3L980.798 16L1202.02 3"
+            stroke="#866583"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
 
       <!--seção contato-->
       <section id="contact" aria-label="Seção Contato">teste 4</section>
@@ -395,4 +449,7 @@
 
   <!--modo claro e escuro-->
   <script src="../scripts/mode.js" defer></script>
+
+  <!--cartão do linkedin-->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </html>
