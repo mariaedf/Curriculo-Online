@@ -38,6 +38,7 @@ form textarea{/*inputs e textarea*/
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    color: var(--text-color);
 }
 
 form button{/*botão de envio de formulário*/
