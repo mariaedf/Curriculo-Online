@@ -3,8 +3,7 @@
 
 /*configurações da seção "contato"*/
 
-#contact {
-  /*seção formação*/
+#contact {/*seção contato*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,21 +13,21 @@
   margin-bottom: 80px;
 }
 
-form{
+form{/*formulário*/
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 500px;
 }
 
-label{
+label{/*label*/
     font-size: 16px;
     color: var(--p-text-color);
     font-family: Verdana, Geneva, sans-serif;
 }
 
 form input,
-form textarea{
+form textarea{/*inputs e textarea*/
     background-color: var(--bg-color);
     border: 2px solid lightgray;
     padding: 15px;
@@ -41,7 +40,7 @@ form textarea{
     -o-border-radius: 10px;
 }
 
-form button{
+form button{/*botão de envio de formulário*/
     background-color: var(--purple-color);
     color: var(--white-color);
     padding: 15px;
@@ -58,7 +57,11 @@ form button{
     -o-border-radius: 10px;
 }
 
-form textarea{
+form button:hover{/*hover do botão*/
+    background-color: var(--purple-hover-color);
+}
+
+form textarea{/*configurações da textarea*/
     min-height: 5rem;
     max-height: 10rem;
     max-width: 100%;
@@ -66,15 +69,14 @@ form textarea{
 }
 
 form input:focus,
-form textarea:focus{
+form textarea:focus{/*foco dos inputs*/
     border: 2px solid var(--purple-color);
 }
 
 /*----------------------mobile------------------------*/
 
-@media (max-width: 1000px) {
-  /*media querie para mobile*/
-  form{
+@media (max-width: 1000px) {/*media querie para mobile*/
+  form{/*formulário*/
     width: 100%;
 }
 }

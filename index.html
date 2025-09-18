@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Descrição para SEO -->
+    <meta name="description" content="Currículo online de Maria Eduarda, desenvolvedora front-end. Veja formação, portfólio e contato." />
+
+    <!-- Autor -->
+    <meta name="author" content="Maria Eduarda" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/maria.jpeg" type="image/x-icon" />
+
     <!--links css-->
 
     <!--configurações gerais-->
@@ -460,19 +469,35 @@
           />
         </svg>
 
-        <form action="" method="post">
+        <!--formulário de contato-->
+        <form id="contact-form" aria-label="Formulário de Contato">
           <label for="name">Nome:</label>
-          <input type="text" name="name" id="name" placeholder="Digite seu nome">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Digite seu nome"
+            required
+          />
 
           <label for="email">E-mail:</label>
-          <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
 
           <label for="message">Mensagem:</label>
-          <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
 
-          <button type="submit">
-            Enviar
-          </button>
+          <button id="button" type="submit">Enviar</button>
         </form>
       </section>
     </main>
@@ -487,9 +512,11 @@
   <script src="scripts/mode.js" defer></script>
 
   <!--cartão do linkedin-->
-  <script
-    src="https://platform.linkedin.com/badges/js/profile.js"
-    async
-    defer
-  ></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  
+  <!--enviar email-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!--contato-->
+  <script src="scripts/contact.js" defer></script>
 </html>
